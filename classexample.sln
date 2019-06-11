@@ -1,25 +1,33 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classexample", "classexample\classexample.csproj", "{16A003E0-02BA-449E-9F84-AA661452A1C4}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16A003E0-02BA-449E-9F84-AA661452A1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16A003E0-02BA-449E-9F84-AA661452A1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16A003E0-02BA-449E-9F84-AA661452A1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16A003E0-02BA-449E-9F84-AA661452A1C4}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EB2D18C4-5513-4CAD-A5A4-2C03AA352D7F}
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace classexample
+
+{
+    class car
+    {
+        public string name;
+        public void company()
+        {
+            Console.WriteLine(" enter your fav  car comapny");
+            name = Console.ReadLine();
+        }
+
+
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            car a = new car();
+            a.company();
+            Console.WriteLine(" your fav car comapany is " + a.name);
+            Console.ReadLine();
+
+        }
+    }
+}
